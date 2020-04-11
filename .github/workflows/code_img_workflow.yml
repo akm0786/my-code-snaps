@@ -22,9 +22,8 @@ jobs:
         output-folder: "my_code_snaps" # This is Required field & this folder will be used to store resized images
     - name: Add & Commit files
       run: |
-        rm -rf snaps
         git config --local user.email "sharadcodes@github.com"
         git config --local user.name "sharadcodes"
         git add .
-        git commit -m "Add changes" -a
+        git commit -m "Add changes" my_code_snaps
         git push -f -q https://${{ secrets.GITHUB_TOKEN }}@github.com/sharadcodes/my-code-snaps.git master
