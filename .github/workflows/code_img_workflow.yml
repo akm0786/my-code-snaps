@@ -14,12 +14,6 @@ jobs:
         source_folder: "my_code_files" # This field is required and it is the folder which contains the source files.
         output_folder: "snaps" # This field is required and it is the folder which contains the snaps.
         syntax_theme: "emacs" # This field is required and it is the syntax highlighting theme that will be used.
-    - name: Image Resizer Action
-      uses: sharadcodes/img-resizer@v1.0
-      with:
-        image-folder: "snaps" # This is a Required field & this folder has original images
-        new-resolution: "1366x768" # This is Required field
-        output-folder: "my_code_snaps" # This is Required field & this folder will be used to store resized images
     - name: Add & Commit files
       run: |
         git config --local user.email "sharadcodes@github.com"
