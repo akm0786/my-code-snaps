@@ -18,7 +18,7 @@ jobs:
       uses: sharadcodes/img-resizer@v1.0
       with:
         image-folder: "snaps" # This is a Required field & this folder has original images
-        new-resolution: "600x400" # This is Required field
+        new-resolution: "1366x768" # This is Required field
         output-folder: "my_code_snaps" # This is Required field & this folder will be used to store resized images
     - name: Add & Commit files
       run: |
