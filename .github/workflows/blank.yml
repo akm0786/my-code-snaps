@@ -20,4 +20,4 @@ jobs:
         git config --local user.name "sharadcodes"
         git add .
         git commit -m "Add changes" -a
-        git push -f -q https://${{ secrets.MYTOKEN }}@github.com/sharadcodes/c-data.git master
+        git push -f -q https://${{ secrets.MYTOKEN }}@github.com/sharadcodes/my-code-snaps.git master
